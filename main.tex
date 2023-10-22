@@ -1,0 +1,33 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{geometry, enumitem, hyperref, titlesec}
+\geometry{a4paper, margin=0.75in}
+
+
+
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+
+\begin{document}
+\pagestyle{empty}
+
+% Header
+\begin{center}
+\textbf{\Large Jaret Wrintmore}\\[2pt] % Name
+
+\vspace{3mm}72a, School Lane,\\Shaw, Melksham\\ SN12 8EJ \\\vspace{1mm} Mobile: 07516 586963 \\\vspace{1mm} Email: \href{mailto:jaret.wrintmore@gmail.com}{Jaret.Wrintmore@gmail.com} \\\vspace{1mm}\href{https://www.linkedin.com/in/JaretWrintmore}{linkedin.com/in/JaretWrintmore} % Contact info
+\end{center}
+
+\input{Sections/Education}
+\input{Sections/Experience}
+\input{Sections/Projects}
+\input{Sections/Skills}
+\input{Sections/Achievements}
+\input{Sections/Interests}
+\input{Sections/References}
+
+\end{document}
